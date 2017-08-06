@@ -1,6 +1,6 @@
 # djangoCRM
 
-## ±¾ÏîÄ¿Ê¹ÓÃ python2, django(1.11.3)
+## æœ¬é¡¹ç›®ä½¿ç”¨ python2, django(1.11.3)
 
 
 

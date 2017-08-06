@@ -20,3 +20,5 @@ admin.site.register(models.Role)
 admin.site.register(models.Payment)
 admin.site.register(models.StudyRecord)
 admin.site.register(models.UserProfile)
+admin.site.register(models.Menu)
+

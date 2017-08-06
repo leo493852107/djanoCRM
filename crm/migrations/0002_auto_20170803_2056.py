@@ -62,6 +62,6 @@ class Migration(migrations.Migration):
         ),
         migrations.AlterUniqueTogether(
             name='studyrecord',
-            unique_together=set([('student', 'course_record')]),
+            unique_together=set([('students', 'course_record')]),
         ),
     ]

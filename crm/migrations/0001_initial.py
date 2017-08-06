@@ -116,7 +116,7 @@ class Migration(migrations.Migration):
                 ('memo', models.TextField(blank=True, null=True, verbose_name='\u5907\u6ce8')),
                 ('date', models.DateTimeField(auto_now_add=True)),
                 ('course_record', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='crm.CourseRecord', verbose_name='\u4e0a\u8bfe\u8bb0\u5f55')),
-                ('student', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='crm.Enrollment', verbose_name='\u5df2\u62a5\u540d\u7684\u5b66\u751f')),
+                ('students', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='crm.Enrollment', verbose_name='\u5df2\u62a5\u540d\u7684\u5b66\u751f')),
             ],
         ),
         migrations.CreateModel(
