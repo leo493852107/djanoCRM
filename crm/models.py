@@ -26,14 +26,14 @@ class Customer(models.Model):
                       (6, '市场推广')
                       )
 
-    source = models.SmallIntegerField(choices=source_choices)
+    source = models.SmallIntegerField(choices=source_choices, verbose_name="来源")
     referral_from = models.CharField(verbose_name="转介绍人qq", max_length=64, blank=True, null=True)
 
     consult_course = models.ForeignKey("Course", verbose_name="咨询课程")
     content = models.TextField(verbose_name="咨询详情")
     tags = models.ManyToManyField("Tag", blank=True, null=True)
-    consultant = models.ForeignKey("UserProfile")
-    date = models.DateTimeField(auto_now_add=True)
+    consultant = models.ForeignKey("UserProfile", verbose_name="顾问")
+    date = models.DateTimeField(auto_now_add=True, verbose_name="时间")
     memo = models.TextField(verbose_name="备注", blank=True, null=True)
 
     def __str__(self):
